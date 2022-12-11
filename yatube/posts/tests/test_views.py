@@ -206,7 +206,7 @@ class PaginatorViewsTest(TestCase):
             reverse('posts:group_list', kwargs={'slug': 'test-slug'}),
             reverse('posts:profile', kwargs={'username': 'auth'}),
         )
-        cls.objs = [
+        objs = [
             Post.objects.create(
                 author=cls.user,
                 text='Тестовый пост',
@@ -214,7 +214,7 @@ class PaginatorViewsTest(TestCase):
             )
             for _ in range(cls.TEST_POSTS_COUNT)
         ]
-        Post.objects.bulk_create(objs=cls.objs, ignore_conflicts=True)
+        Post.objects.bulk_create(objs=objs, ignore_conflicts=True)
 
     def setUp(self):
         self.authorized_client = Client()
