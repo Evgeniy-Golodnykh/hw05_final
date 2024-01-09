@@ -6,7 +6,7 @@ The YaTube App is used for blogging, subscribing to authors and tracking their p
 ### Quick Start
 1. Clone repo
 ```bash
-git clone git@github.com:Evgeniy-Golodnykh/yatube_project.git
+git clone git@github.com:Evgeniy-Golodnykh/yatube.git
 ```
 2. Creates the virtual environment
 ```bash
